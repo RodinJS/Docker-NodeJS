@@ -1,4 +1,5 @@
-The Rodin's Node.js docker image.
+# Docker-NodeJS-alpine
+Rodin Docker Image for Node.js
 
 ## What is Node.js?
 
@@ -15,7 +16,7 @@ See: http://nodejs.org
 
 ```dockerfile
 # specify the node base image with your desired version node:<version>
-FROM node:6
+FROM rodinvr/node:6
 # replace this with your application's default port
 EXPOSE 8888
 ```
@@ -33,7 +34,7 @@ If you prefer Docker Compose:
 version: "2"
 services:
   node:
-    image: "node:8"
+    image: "rodinvr/node:6"
     environment:
       - NODE_ENV=production
     volumes:
@@ -59,5 +60,4 @@ It also assumes that you have a file named [`.dockerignore`](https://docs.docker
 
 ```
 node_modules
-```# Docker-NodeJS-alpine
-Rodin Docker Image for Node.js
+```
