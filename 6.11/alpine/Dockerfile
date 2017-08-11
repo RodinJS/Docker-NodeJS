@@ -17,6 +17,7 @@ RUN addgroup -g 1000 node \
         linux-headers \
         make \
         python \
+        git \
   # gpg keys listed at https://github.com/nodejs/node#release-team
   && for key in \
     9554F04D7259F04124DE6B476D5A82AC7E37093B \
